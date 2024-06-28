@@ -1,9 +1,6 @@
 {
     "name": "${localWorkspaceFolderBasename}",
-    "build": {
-        "dockerfile": "Dockerfile",
-        "context": ".."
-    },
+    "image": "nvidia/cuda:11.7.1-base-ubuntu22.04",
     "customizations": {
         "vscode": {
             "settings": {
@@ -40,5 +37,6 @@
     },
     "runArgs": [
         "--gpus=all"
-    ]
+    ],
+    "postCreateCommand": ".devcontainer/postCreateCommand.sh"
 }
