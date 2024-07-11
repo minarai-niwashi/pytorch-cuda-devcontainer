@@ -1,6 +1,9 @@
 {
     "name": "${localWorkspaceFolderBasename}",
-    "image": "nvidia/cuda:11.7.1-base-ubuntu22.04",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
     "customizations": {
         "vscode": {
             "settings": {
