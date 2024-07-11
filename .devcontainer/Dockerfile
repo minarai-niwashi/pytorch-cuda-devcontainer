@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     curl=7.81.0-1ubuntu1.16 \
     git=1:2.34.1-1ubuntu1.11 \
     sudo=1.9.9-1ubuntu2.4 \
+    openssh-client=1:8.9p1-3ubuntu0.10 \
     && apt-get clean
 
 ARG USERNAME=vscode
