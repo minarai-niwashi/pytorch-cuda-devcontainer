@@ -18,15 +18,13 @@
                     "editor.codeActionsOnSave": {
                         "source.fixAll": "explicit",
                         "source.organizeImports": "explicit"
-                    },
-                    "testing.pytestArgs": [
-                        "src"
-                    ],
-                    "testing.unittestEnabled": false,
-                    "testing.pytestEnabled": true
+                    }
                 },
+                "python.testing.pytestArgs": ["src"],
+                "python.testing.unittestEnabled": false,
+                "python.testing.pytestEnabled": true,
                 "ruff.nativeServer": true,
-                "ruff.configuration": "${containerWorkspaceFolder}/ruff.toml"
+                "ruff.configuration": "${containerWorkspaceFolder}/.ruff.toml"
             },
             "extensions": [
                 "ms-python.python",
@@ -35,7 +33,8 @@
                 "njpwerner.autodocstring",
                 "shardulm94.trailing-spaces",
                 "Gruntfuggly.todo-tree",
-                "EditorConfig.EditorConfig"
+                "EditorConfig.EditorConfig",
+                "esbenp.prettier-vscode"
             ]
         }
     },
