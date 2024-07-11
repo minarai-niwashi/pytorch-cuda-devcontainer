@@ -6,7 +6,8 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     git=1:2.34.1-1ubuntu1.11 \
     sudo=1.9.9-1ubuntu2.4 \
     openssh-client=1:8.9p1-3ubuntu0.10 \
-    && apt-get clean
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 ARG USERNAME=vscode
 ARG USER_UID=1000
