@@ -1,7 +1,13 @@
-FROM nvidia/cuda:11.7.1-base-ubuntu22.04
+FROM nvidia/cuda:11.8.0-base-ubuntu22.04
 
-RUN apt-get update
-RUN apt-get install -y python3-pip curl git sudo
+RUN apt-get update && apt-get install --no-install-recommends -y \
+    python3-pip=22.0.2+dfsg-1ubuntu0.4 \
+    curl=7.81.0-1ubuntu1.16 \
+    git=1:2.34.1-1ubuntu1.11 \
+    sudo=1.9.9-1ubuntu2.4 \
+    openssh-client=1:8.9p1-3ubuntu0.10 \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 ARG USERNAME=vscode
 ARG USER_UID=1000
