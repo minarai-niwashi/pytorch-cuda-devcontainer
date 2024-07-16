@@ -20,6 +20,7 @@
             "source.organizeImports": "explicit"
           }
         },
+        "python.defaultInterpreterPath": "/usr/bin/python3",
         "python.testing.pytestArgs": ["src"],
         "python.testing.unittestEnabled": false,
         "python.testing.pytestEnabled": true,
