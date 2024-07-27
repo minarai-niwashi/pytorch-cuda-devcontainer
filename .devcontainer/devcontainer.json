@@ -20,12 +20,13 @@
             "source.organizeImports": "explicit"
           }
         },
-        "python.defaultInterpreterPath": "/usr/bin/python3",
         "python.testing.pytestArgs": ["src"],
         "python.testing.unittestEnabled": false,
         "python.testing.pytestEnabled": true,
         "ruff.nativeServer": true,
-        "ruff.configuration": "${containerWorkspaceFolder}/.ruff.toml"
+        "ruff.configuration": "${containerWorkspaceFolder}/.ruff.toml",
+        "dotfiles.repository": "https://github.com/minarai-niwashi/dotfiles.git",
+        "dotfiles.installCommand": "install.sh"
       },
       "extensions": [
         "ms-python.python",
