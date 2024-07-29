@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.8.0-base-ubuntu22.04
+FROM nvidia/cuda:12.1.1-base-ubuntu22.04
 
 RUN apt-get update && apt-get install --no-install-recommends -y \
     python3-pip=22.0.2+dfsg-1ubuntu0.4 \
