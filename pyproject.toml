@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="base-project"
+version="0.1.0"
+readme = "README.md"
+requires-python = "==3.10.*"
+dependencies = [
+    "torch==2.4.0",
+    "torchvision==0.19.0",
+    "torchaudio==2.4.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "ipykernel>=6.29.0",
+    "pytest~=8.2.2",
+    "pre-commit~=3.7.1"
+]
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
+
+[tool.ruff.format]
+docstring-code-format = true
