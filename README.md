@@ -1,5 +1,5 @@
 # pytorch-cuda-devcontainer
-devcontainerを使ったPyTorch-CUDA開発環境
+devcontainerを使ったPyTorch-CUDA環境
 
 ## 事前準備
 - ホストOSにNVIDIA Driver、CUDA Toolkitをインストールする。
