@@ -14,7 +14,7 @@ devcontainerを使ったPyTorch-CUDA環境
 - Ubuntu 22.04 (WSL2)
 - NVIDIA GeForce RTX 3060 Ti
 
-| | バージョン |
-| --- | :---: |
-| NVIDIA Driver | 536.23 |
-| CUDA Toolkit | 11.1 |
+| item          | version    |
+|---------------|:----------:|
+| NVIDIA Driver | 536.23     |
+| CUDA Toolkit  | 11.1       |
