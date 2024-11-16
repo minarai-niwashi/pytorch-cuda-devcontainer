@@ -3,8 +3,8 @@ devcontainerを使ったPyTorch-CUDA環境
 
 ## Environment
 
-- **Python Version**: `3.11`
-- **Base Image**: `mcr.microsoft.com/devcontainers/python:3.11-bullseye`
+- **Python Version**: `3.10`
+- **Base Image**: `nvidia/cuda:12.1.1-base-ubuntu22.04`
 
 ## 事前準備
 - ホストOSにNVIDIA Driver、CUDA Toolkitをインストールする。
