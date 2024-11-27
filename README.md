@@ -7,7 +7,7 @@ devcontainerを使ったPyTorch-CUDA環境
 - **Base Image**: `nvidia/cuda:12.1.1-base-ubuntu22.04`
 
 ## 事前準備
-- ホストOSにNVIDIA Driver、CUDA Toolkitをインストールする。
+- ホストOSに[NVIDIA Driver](https://www.nvidia.com/en-us/drivers/)、[CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)をインストールする。
 - ホストOSに[NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)をインストールする。
 
 ## 検証環境
