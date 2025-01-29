@@ -3,7 +3,7 @@ FROM nvidia/cuda:12.1.1-base-ubuntu22.04
 RUN apt-get update && apt-get install --no-install-recommends -y \
     python3-pip=22.0.2+dfsg-1ubuntu0.5 \
     curl=7.81.0-1ubuntu1.20 \
-    git=1:2.34.1-1ubuntu1.11 \
+    git=1:2.34.1-1ubuntu1.12 \
     sudo=1.9.9-1ubuntu2.4 \
     openssh-client=1:8.9p1-3ubuntu0.10 \
     && apt-get clean \
