@@ -42,6 +42,6 @@
       ]
     }
   },
-  "runArgs": ["--gpus=all"],
+  "runArgs": ["--gpus=all", "--shm-size=1gb"],
   "postCreateCommand": ".devcontainer/postCreateCommand.sh"
 }
