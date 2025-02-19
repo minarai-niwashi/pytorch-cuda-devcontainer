@@ -1,5 +1,4 @@
 #!/bin/bash
 
-python3 -m pip install --upgrade pip
-python3 -m pip --no-cache-dir install .[dev]
-pre-commit install
+sh -c "$(curl -LsSf https://astral.sh/uv/0.6.1/install.sh)"
+uv sync --frozen --dev
