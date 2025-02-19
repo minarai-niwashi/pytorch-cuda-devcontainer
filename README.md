@@ -4,8 +4,8 @@ Devcontainer-Based PyTorch-CUDA Environment
 
 ## Environment
 
-- **Python Version**: `3.10`
-- **Base Image**: `nvidia/cuda:12.1.1-base-ubuntu22.04`
+- **Python Version**: `3.12`
+- **Base Image**: `nvidia/cuda:12.4.1-base-ubuntu22.04`
 
 ## Preparation
 
