@@ -4,6 +4,9 @@
     "dockerfile": "Dockerfile",
     "context": ".."
   },
+  "containerEnv": {
+    "UV_CACHE_DIR": "${containerWorkspaceFolder}/.cache/uv"
+  },
   "customizations": {
     "vscode": {
       "settings": {

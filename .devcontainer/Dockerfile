@@ -1,13 +1,22 @@
-FROM nvidia/cuda:12.1.1-base-ubuntu22.04
+FROM nvidia/cuda:12.4.1-base-ubuntu22.04
 
-RUN apt-get update && apt-get install --no-install-recommends -y \
-    python3-pip=22.0.2+dfsg-1ubuntu0.5 \
+RUN apt-get update && apt-get install --no-install-recommends -y locales=2.35-0ubuntu3.9 \
+    && locale-gen en_US.UTF-8 \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && apt-get install --no-install-recommends -y software-properties-common=0.99.22.9 \
+    && add-apt-repository ppa:deadsnakes/ppa \
+    && apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
+    python3.12=3.12.9-1+jammy1 \
     curl=7.81.0-1ubuntu1.20 \
     git=1:2.34.1-1ubuntu1.12 \
     sudo=1.9.9-1ubuntu2.4 \
-    openssh-client=1:8.9p1-3ubuntu0.10 \
+    openssh-client=1:8.9p1-3ubuntu0.11 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
+
+RUN ln -fs python3.12 /usr/bin/python3
 
 ARG USERNAME=vscode
 ARG USER_UID=1000
