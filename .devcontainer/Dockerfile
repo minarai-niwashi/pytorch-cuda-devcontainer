@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y locales=2.35-0u
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN apt-get update && apt-get install --no-install-recommends -y software-properties-common \
+RUN apt-get update && apt-get install --no-install-recommends -y software-properties-common=0.99.22.9 \
     && add-apt-repository ppa:deadsnakes/ppa \
     && apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
     python3.12=3.12.9-1+jammy1 \
