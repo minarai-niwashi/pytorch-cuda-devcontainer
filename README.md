@@ -1,6 +1,6 @@
 # pytorch-cuda-devcontainer
 
-Devcontainer-Based PyTorch-CUDA Environment
+This repository provides a development environment where you can run GPU-enabled PyTorch inside a devcontainer on WSL2.
 
 ## Environment
 
@@ -9,7 +9,9 @@ Devcontainer-Based PyTorch-CUDA Environment
 
 ## Preparation
 
-- [WSL 2 で NVIDIA CUDA を有効にする](https://learn.microsoft.com/ja-jp/windows/ai/directml/gpu-cuda-in-wsl)
+- Enable NVIDIA CUDA on WSL
+    - [English](https://learn.microsoft.com/en-us/windows/ai/directml/gpu-cuda-in-wsl)
+    - [Japanese](https://learn.microsoft.com/ja-jp/windows/ai/directml/gpu-cuda-in-wsl)
 - [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
 
 ## Tested Environment
