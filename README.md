@@ -21,5 +21,5 @@ This repository provides a development environment where you can run GPU-enabled
 
 | item          | version |
 |---------------|:-------:|
-| NVIDIA Driver | 536.23  |
 | CUDA Toolkit  |  11.1   |
+| NVIDIA Driver | 536.23  |
