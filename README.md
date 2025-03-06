@@ -10,8 +10,8 @@ This repository provides a development environment where you can run GPU-enabled
 ## Preparation
 
 - Enable NVIDIA CUDA on WSL
-    - [English](https://learn.microsoft.com/en-us/windows/ai/directml/gpu-cuda-in-wsl)
-    - [Japanese](https://learn.microsoft.com/ja-jp/windows/ai/directml/gpu-cuda-in-wsl)
+  - [English](https://learn.microsoft.com/en-us/windows/ai/directml/gpu-cuda-in-wsl)
+  - [Japanese](https://learn.microsoft.com/ja-jp/windows/ai/directml/gpu-cuda-in-wsl)
 - [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
 
 ## Tested Environment
