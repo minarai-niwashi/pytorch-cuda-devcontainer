@@ -46,6 +46,5 @@
     }
   },
   "runArgs": ["--gpus=all", "--shm-size=1gb"],
-  "postCreateCommand": ".devcontainer/postCreateCommand.sh",
-  "remoteUser": "ubuntu"
+  "postCreateCommand": ".devcontainer/postCreateCommand.sh"
 }

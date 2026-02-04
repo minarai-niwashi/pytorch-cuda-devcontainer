@@ -9,13 +9,17 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --no-instal
     git=1:2.43.0-1ubuntu7.3 \
     sudo=1.9.15p5-3ubuntu5.24.04.1 \
     ca-certificates=20240203 \
-    && update-ca-certificates \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+RUN update-ca-certificates
 RUN ln -fs python3.12 /usr/bin/python3
 
-RUN echo "ubuntu ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/ubuntu \
-    && chmod 0440 /etc/sudoers.d/ubuntu
+ARG USERNAME=ubuntu
 
-ENV PATH=/home/ubuntu/.local/bin:$PATH
+RUN echo ${USERNAME} ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
+    && chmod 0440 /etc/sudoers.d/$USERNAME
+
+USER $USERNAME
+
+ENV PATH=/home/$USERNAME/.local/bin:$PATH
