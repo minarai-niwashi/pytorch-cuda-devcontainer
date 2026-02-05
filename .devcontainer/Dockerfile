@@ -4,7 +4,7 @@ ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8
 
 RUN apt-get update \
-    && apt-get install --no-install-recommends -y debconf \
+    && apt-get install --no-install-recommends -y debconf=1.5.86ubuntu1  \
     && dpkg-reconfigure debconf --frontend=noninteractive \
     && apt-get install --no-install-recommends -y \
         python3.12=3.12.3-1ubuntu0.10 \
