@@ -5,7 +5,7 @@ This repository provides a development environment where you can run GPU-enabled
 ## Environment
 
 - **Python Version**: `3.12`
-- **Base Image**: `nvidia/cuda:12.4.1-base-ubuntu22.04`
+- **Base Image**: `ubuntu:24.04`
 
 ## Preparation
 
@@ -21,5 +21,4 @@ This repository provides a development environment where you can run GPU-enabled
 
 | item          | version |
 |---------------|:-------:|
-| NVIDIA Driver | 536.23  |
-| CUDA Toolkit  |  11.1   |
+| NVIDIA Driver | 591.86  |
