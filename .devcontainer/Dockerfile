@@ -4,14 +4,9 @@ ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8
 
 RUN apt-get update \
-    && apt-get install --no-install-recommends -y debconf=1.5.86ubuntu1  \
+    && apt-get install --no-install-recommends -y debconf \
     && dpkg-reconfigure debconf --frontend=noninteractive \
-    && apt-get install --no-install-recommends -y \
-        python3.12=3.12.3-1ubuntu0.10 \
-        curl=8.5.0-2ubuntu10.6 \
-        git=1:2.43.0-1ubuntu7.3 \
-        sudo=1.9.15p5-3ubuntu5.24.04.1 \
-        ca-certificates=20240203 \
+    && apt-get install --no-install-recommends -y python3.12 curl git sudo ca-certificates \
     && update-ca-certificates \
     && ln -fs python3.12 /usr/bin/python3 \
     && apt-get clean \
